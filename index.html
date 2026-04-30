@@ -227,18 +227,6 @@
 </div>
 </section>
 
-<section style="background:linear-gradient(180deg,transparent,rgba(201,151,58,.025) 50%,transparent)">
-<div class="container">
-<div class="section-eyebrow">YouTube</div>
-<div class="video-label">@johnefinance · YouTube</div>
-<div class="video-wrap" id="hero-video" role="button" tabindex="0" aria-label="Play John Eringman YouTube video">
-<div class="video-poster">
-<div class="play-btn"></div>
-</div>
-</div>
-<p class="video-note">Pulled from your YouTube channel to help set context. The most-watched recent video on @johnefinance.</p>
-</div>
-</section>
 
 <section style="background:linear-gradient(180deg,transparent,rgba(201,151,58,.025) 50%,transparent)">
 <div class="container">
@@ -246,7 +234,7 @@
 <h2 class="section-title">Everything I built for you, <em>in one place.</em></h2>
 <p class="section-sub">Seven deliverables. The working assets are ready to install; the strategy docs explain the why. The sample landing page is the headliner - everything else feeds it.</p>
 
-<a href="landing-page.html" target="_blank" class="deliverable-featured">
+<a href="https://andrei170.github.io/john-eringman-landing/" target="_blank" class="deliverable-featured">
 <div class="featured-info">
 <span class="tag">Working Asset</span>
 <h3>Sample Landing Page</h3>
@@ -468,22 +456,5 @@
 </div>
 </footer>
 
-<script>
-(function(){
-  var v = document.getElementById('hero-video');
-  if(!v) return;
-  function load(){
-    var iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed?listType=user_uploads&list=johnefinance&index=0&autoplay=1&rel=0';
-    iframe.setAttribute('allow','accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
-    iframe.setAttribute('allowfullscreen','');
-    iframe.frameBorder = '0';
-    v.innerHTML = '';
-    v.appendChild(iframe);
-  }
-  v.addEventListener('click', load);
-  v.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); load(); }});
-})();
-</script>
 </body>
 </html>
