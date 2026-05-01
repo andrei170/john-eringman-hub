@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funnel Blueprint · For John Eringman · AG1</title>
+<meta name="description" content="Funnel Blueprint - built for John Eringman by AG1 Consulting.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Funnel Blueprint · For John Eringman">
+<meta property="og:description" content="Part of the funnel audit + less-than-7-day install plan built for @johnefinance by AG1 Consulting.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="hub-page.html" class="nav-back"><span class="arrow">&larr;</span> Back to Hub</a>
+    <span class="nav-title">For John Eringman · AG1</span>
+  </div>
+</nav>
+
+<article class="doc">
+  <header class="doc-header">
+    <span class="doc-tag">Architecture</span>
+    <h1>Funnel Blueprint - John Eringman</h1>
+  </header>
+
+  
+<p><strong>Architecture deliverable</strong> · Full funnel diagram, phase mapping, tech stack, integration points.</p>
+<hr />
+<h2>Funnel Diagram (top to bottom)</h2>
+<pre><code>ENTRY POINTS
+├── @johnefinance TikTok (1.3M) ────────────────────┐
+├── @johnefinance IG (164K) ─────────────────────────┤
+├── YouTube @johnefinance (evergreen search) ────────┤
+├── johnefinance.com (site visitors) ───────────────┤
+└── Cold ads (Phase 4) - Meta + YouTube ────────────┘
+                              ↓
+                    LINKTREE / BIO ROUTER
+                              ↓
+          ┌──── PERSONAL FINANCE HEALTH CHECK ──────┐
+          │     (ScoreApp / Typeform · 5q · 5 min)  │
+          │     Captures email + segments            │
+          └──────────────────┬──────────────────────┘
+                             ↓
+                    ┌────────┴────────┐
+                    ↓                 ↓
+            Score 71-100         Score 0-70
+            (Investment-ready)   (Foundations / debt pool)
+                    ↓                 ↓
+           COHORT-READY PATH    8-TOUCH SEGMENTED NURTURE
+           (Financial Indep.    (Welcome flow, 10 days)
+            Cohort application)        ↓
+                                PAID NEWSLETTER
+                                &quot;The Real Numbers&quot;
+                                ($9/month or $79/year)
+                                       ↓
+                               FINANCIAL INDEPENDENCE
+                               COHORT ($297/$497)
+                               8-week live programme
+                                       ↓
+                              COHORT GRADUATE COMMUNITY
+                              (Skool or Circle, low-overhead)
+                                       ↓
+                              REFERRAL LOOP + TESTIMONIALS
+                              (feed next cohort intake)
+
+PARALLEL TRACK
+YouTube traffic → scorecard CTA in descriptions + end screens
+                → email list capture from search audience
+                → newsletter + cohort pre-sell
+</code></pre>
+<h2>Phase Mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>Phase</th>
+<th>Owner</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Personal Finance Health Check landing page</td>
+<td>1</td>
+<td>AG1</td>
+<td>custom HTML or Webflow</td>
+</tr>
+<tr>
+<td>ScoreApp / Typeform quiz build</td>
+<td>1</td>
+<td>AG1</td>
+<td>ScoreApp or Typeform</td>
+</tr>
+<tr>
+<td>Score result PDF (3 tiers)</td>
+<td>1</td>
+<td>AG1</td>
+<td>Canva / designed PDF</td>
+</tr>
+<tr>
+<td>Bio link router updated across TikTok, IG, YouTube</td>
+<td>1</td>
+<td>AG1 + John</td>
+<td>Linktree Pro or Beacons</td>
+</tr>
+<tr>
+<td>Email auto-trigger on quiz completion</td>
+<td>1</td>
+<td>AG1</td>
+<td>Kit / ConvertKit</td>
+</tr>
+<tr>
+<td>8-touch welcome sequence (segmented by score tier)</td>
+<td>2</td>
+<td>AG1</td>
+<td>Kit / ConvertKit</td>
+</tr>
+<tr>
+<td>Paid newsletter landing page + Ghost setup</td>
+<td>2</td>
+<td>AG1</td>
+<td>Ghost.io</td>
+</tr>
+<tr>
+<td>Newsletter issue 1 (launch edition)</td>
+<td>2</td>
+<td>AG1 + John</td>
+<td>Ghost</td>
+</tr>
+<tr>
+<td>Financial Independence Cohort landing page</td>
+<td>3</td>
+<td>AG1</td>
+<td>custom HTML or Webflow</td>
+</tr>
+<tr>
+<td>Cohort application form</td>
+<td>3</td>
+<td>AG1</td>
+<td>Typeform</td>
+</tr>
+<tr>
+<td>Cohort Zoom + community setup</td>
+<td>3</td>
+<td>AG1</td>
+<td>Zoom + Skool</td>
+</tr>
+<tr>
+<td>YouTube end-screen + description CTA update</td>
+<td>3</td>
+<td>AG1 + John</td>
+<td>YouTube Studio</td>
+</tr>
+<tr>
+<td>Content hook bank + short-form calendar</td>
+<td>3</td>
+<td>AG1 + John</td>
+<td>Notion + CapCut</td>
+</tr>
+<tr>
+<td>Meta + YouTube paid ads</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta Ads Manager + Google Ads</td>
+</tr>
+<tr>
+<td>Retargeting campaigns</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta + Google + GTM</td>
+</tr>
+<tr>
+<td>Lookalike audiences from email list</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta CAPI</td>
+</tr>
+</tbody>
+</table>
+<h2>Tech Stack (recommended, swappable)</h2>
+<ul>
+<li><strong>Newsletter:</strong> Ghost.io (preferred - no platform risk, full design control, built-in subscriptions) or Substack</li>
+<li><strong>Quiz / Scorecard:</strong> ScoreApp (preferred for scoring + PDF generation) or Typeform</li>
+<li><strong>Email:</strong> Kit / ConvertKit (preferred for segmentation by score tier)</li>
+<li><strong>Cohort platform:</strong> Kajabi (all-in-one: courses + community + payments) or Teachable + Skool</li>
+<li><strong>Community:</strong> Skool (preferred for live programme communities) or Circle</li>
+<li><strong>Payment:</strong> Stripe (newsletter + cohort checkout)</li>
+<li><strong>Video:</strong> Zoom (cohort live calls) + Loom (async support) + YouTube (long-form)</li>
+<li><strong>Analytics:</strong> GA4 + Meta Pixel + Microsoft Clarity (heatmaps on landing pages)</li>
+<li><strong>Link routing:</strong> Linktree Pro or Beacons (bio link hub)</li>
+<li><strong>Project / build:</strong> Notion (handover-friendly)</li>
+</ul>
+<h2>Integration Points</h2>
+<ol>
+<li>ScoreApp quiz completion triggers Kit email tag (score tier) + welcome sequence</li>
+<li>Kit email sequence routes to Ghost newsletter landing on Day 3 email</li>
+<li>Ghost newsletter subscriber list syncs with Kit (tags: "newsletter-paid" + tier)</li>
+<li>Cohort application form triggers Kit tag "cohort-applicant" + manual review queue</li>
+<li>Cohort payment triggers Kajabi or Teachable enrolment via Zapier</li>
+<li>YouTube descriptions updated with scorecard link - tracks via UTM parameter "yt-desc"</li>
+<li>All surfaces fire GA4 + Meta Pixel via GTM for retargeting eligibility</li>
+</ol>
+<h2>Owner Map</h2>
+<ul>
+<li><strong>John:</strong> live cohort calls (8 per cohort cycle), newsletter writing (or sign-off on AG1-drafted editions), short-form content filming (existing cadence continues), top-line decisions on brand/copy</li>
+<li><strong>AG1 (Andrei):</strong> everything else - scorecard build, landing pages, email sequences, Ghost setup and initial newsletter issues, cohort platform setup, content calendar, ads management, weekly reporting</li>
+</ul>
+<h2>Failure Modes + Mitigations</h2>
+<ul>
+<li><strong>"No sales pitches" brand friction on the newsletter launch</strong> → position as "paid access to what I already produce for free" not as a "product launch." Soft-launch to IG/TikTok with no fanfare. Let the first free issue demonstrate the quality.</li>
+<li><strong>Cohort fill rate below 20 students</strong> → pre-sell cohort via email list before opening checkout. Minimum 200 email subscribers before cohort launch. If list is below 200 at launch, delay cohort and run an additional scorecard-push content sprint.</li>
+<li><strong>TikTok ban / algorithm shift during build</strong> → accelerate scorecard + email capture. The ban risk is the argument for the install, not against it.</li>
+<li><strong>Ghost vs Substack decision</strong> → start on Ghost for brand control. Substack has higher organic discovery but less design control and takes a cut of paid subscriptions.</li>
+</ul>
+<h2>KPIs (90-day)</h2>
+<ul>
+<li>Phase 1 · Scorecard live · 500+ completions in 30 days from TikTok + IG audience</li>
+<li>Phase 2 · 200+ email subscribers · newsletter issue 1 sent to confirmed list</li>
+<li>Phase 3 · Cohort pre-sell page live · 20+ applications received before checkout opens</li>
+<li>Phase 4 · Meta CPL under $5 (personal finance audience, cold) · newsletter paid conversion rate 10%+</li>
+<li>Year-1 floor target · $195K-600K/yr incremental on top of existing sponsorship revenue</li>
+</ul>
+
+  <footer class="doc-footer">
+    <a href="hub-page.html" class="doc-footer-link">Back to Hub</a>
+    <div class="doc-meta">Prepared 2026-04-30 &middot; Built for @johnefinance</div>
+  </footer>
+</article>
+
+</body>
+</html>
